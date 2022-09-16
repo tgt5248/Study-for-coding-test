@@ -35,9 +35,17 @@ Case2
     
 """
 Case 3
-1. 정렬
-2. 
+1. 정렬 (string으로 된 숫자는 정수의 오름차순 정렬이 아님)
+    ex) 1, 12, 125, 14, 2, ...
+2. i번째와 i번째 길이만큼의 i+1번째가 같은지 확인하면 접두어 확인 가능
 """
 def solution(phone_book):
     phone_book.sort()
+    for i in range(len(phone_book)-1):
+        if phone_book[i]==phone_book[i+1][:len(phone_book[i])]:
+            return False
     return True
+
+
+#내장함수 str.startsWith(searchString[, position]) : 어떤 문자열이 특정 문자로 시작하는지 확인하여 결과를 true 혹은 false로 반환.
+# from itertools import combinations : for(a,b) in combinations(리스트,2) 리스트에서 2개씩 모든 조합을 구하기
