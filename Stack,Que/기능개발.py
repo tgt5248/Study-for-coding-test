@@ -7,12 +7,11 @@ def solution(progresses, speeds):
     count=1
     b=[]
     while(len(a)>1):
-        i=0            
-        if a[i]>=a[i+1]:
+        if a[0]>=a[1]:
             count+=1
-            a.pop(i+1)
+            a.pop(1)
         else:
-            a.pop(i)
+            a.pop(0)
             b.append(count)
             count=1
     b.append(count)
