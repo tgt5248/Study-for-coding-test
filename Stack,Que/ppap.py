@@ -14,8 +14,8 @@ Case 1
 """
 Case2 
 시간초과 
+str으로 비교
 """
-
 # import sys
 # str= str(sys.stdin.readline().strip())
 
@@ -45,4 +45,4 @@ if new==['P'] :
 else:
     print('NP') 
     
-#new=new[:-3] 보다 pop3번하는게 빠른가보네 배우고 갑니다 
+#new=new[:-3] 보다 pop3번하는게 빠른가보네 배워 갑니다 
